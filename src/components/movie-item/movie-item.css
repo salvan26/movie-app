@@ -1,0 +1,102 @@
+@media (min-width: 980px) {
+  .movie-card {
+      width: 450px;
+      height: 280px;
+      box-sizing: border-box;
+      padding: 0;
+  }
+
+  .ant-space {
+      height: 100%;
+  }
+
+  .movie-item__date {
+      display: block;
+      height: 20px;
+      width: 100%;
+  }
+  
+  .movie-item__genre {
+      height: 45px;
+  }
+  
+  .movie-item__name {
+      height: 27px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 18px;
+  }
+  
+  .movie-item__poster {
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+  }
+  
+  .movie-item__second-space {
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .movie-item__description {
+      display: block;
+      box-sizing: border-box;
+      padding: 10px 5px;
+      height: 120px;
+      overflow: hidden;
+  }
+  
+  .movie-item__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      height: 40px;
+  }
+  
+  .movie-item__rate {
+      width: 30px;
+      height: 30px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      padding: 1px 3px;
+      font-size: 14px;
+      font-weight: 600;
+  }
+  
+  .movie-item__rate--lowest {
+      border: 3px solid #E90000;
+  }
+  
+  .movie-item__rate--low {
+      border: 3px solid #E97E00 ;
+  }
+  
+  .movie-item__rate--middle {
+      border: 3px solid #E9D100;
+  }
+  
+  .movie-item__rate--high {
+      border: 3px solid #66E900;
+  }
+
+  .movie-item__rate--highest {
+      border: 3px solid #66E900;
+      padding: 1px 5px;
+  }
+  
+  .movie-card__stars {
+      width: auto;
+      display: flex;
+      padding: 5px 0px;
+      margin: 0;
+      height: 20px;
+      box-sizing: border-box;
+  }
+  .ant-rate .ant-rate-star {
+    margin-inline-end: 3px!important;
+}
+}
+
