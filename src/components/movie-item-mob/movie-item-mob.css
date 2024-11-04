@@ -1,4 +1,4 @@
-@media (min-width: 420px) and (max-width: 979px) {
+@media (min-width: 320px) and (max-width: 979px) {
     .movie-card__second-space {
         padding: 10px;
         box-sizing: border-box;
