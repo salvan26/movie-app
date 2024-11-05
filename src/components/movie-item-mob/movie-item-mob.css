@@ -77,8 +77,6 @@
         box-sizing: border-box;
         padding-left: 126px;
     }
-    /*Important применен для переопределения библиотечного стиля, касающегося звезд внутри, 
-    так как доступа к нему нет, Design Tokena нет  */
     .ant-rate .ant-rate-star {
         margin-inline-end: 3px!important;
     }
