@@ -6,6 +6,8 @@ import { nanoid } from 'nanoid';
 
 import Rating from '../rated';
 
+import defaultPoster from './no-poster.jpg';
+
 const { Title, Text } = Typography;
 
 export default class MovieItem extends React.Component {
@@ -18,6 +20,8 @@ export default class MovieItem extends React.Component {
       overflow: 'hidden',
     },
   };
+
+  posterBase = 'https://image.tmdb.org/t/p/w500';
 
   stylesSpace = {
     item: {
@@ -95,7 +99,7 @@ export default class MovieItem extends React.Component {
         <Space direction="horizontal" styles={this.stylesSpace}>
           <img
             className="movie-item__poster"
-            src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
+            src={item.poster_path === null ? defaultPoster : `${this.posterBase}${item.poster_path}`}
             alt="movie net"
           />
           <Space direction="vertical" className="movie-item__second-space" styles={this.stylesSpace}>
